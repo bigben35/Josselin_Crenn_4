@@ -701,12 +701,10 @@ p {
   font-weight: 700;
 }
 
-.twitter,
-.facebook,
-.dribbble,
-.instagram {
+.social {
   max-width: 400px;
   margin: auto auto auto auto;
+  padding: 20px;
 }
 
 h2 {
