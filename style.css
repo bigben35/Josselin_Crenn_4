@@ -655,9 +655,10 @@ a[data-lightbox]:hover img {
 }
 
 .snapshot-lb .lightbox-caption {
-  padding: 0;
+  padding: 4px;
   color: rgba(0, 0, 0, 0.5);
   background: none;
+  margin: 0;
 }
 
 h1,
