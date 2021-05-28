@@ -31,7 +31,7 @@ a:hover {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0 50px;
+  /*padding: 0 50px;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,13 +39,13 @@ a:hover {
   position: relative;
 }
 
-.bloc .container {
+/*.bloc .container {
   padding-left: 0;
   padding-right: 0;
-}
+}*/
 
 .bloc-lg {
-  padding: 100px 50px;
+  padding: 70px 0 100px 0;
 }
 
 .bloc-md {
@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-  padding: 20px 50px;
+  padding: 20px 0;
 }
 
 .bg-center,
@@ -275,6 +275,8 @@ a:hover {
 .row-no-gutters {
   margin-right: 0;
   margin-left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -290,8 +292,12 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   z-index: 1;
+  display: flex;
 }
-
+.navbar-header {
+  display: flex;
+  width: 100%;
+}
 .navbar-brand {
   height: auto;
   padding: 3px 15px;
@@ -299,6 +305,9 @@ a:hover {
   font-weight: normal;
   font-weight: 600;
   line-height: 44px;
+}
+.logo_chouette {
+  display: none;
 }
 
 .navbar-brand img {
@@ -316,16 +325,20 @@ a:hover {
 }
 
 .navbar .nav {
-  padding-top: 2px;
-  margin-right: -16px;
+  /*padding-top: 2px;*/
+  margin-right: 60px;
   float: right;
   z-index: 1;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav > li {
   float: left;
-  margin-top: 4px;
+  /*margin-top: 4px;*/
   font-size: 16px;
+  list-style-type: none;
+  padding: 10px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -340,6 +353,7 @@ a:hover {
 .navbar-toggle {
   margin: 10px 10px 0 0;
   border: 0px;
+  visibility: hidden;
 }
 
 .navbar-toggle:hover {
@@ -443,6 +457,7 @@ nav .caret {
 .mg-lg {
   margin-top: 10px;
   margin-bottom: 40px;
+  font-size: 0.9em;
 }
 
 .btn {
@@ -520,6 +535,9 @@ button {
   opacity: 0;
   z-index: 500;
   transition: all 0.3s ease-in-out;
+}
+.scrollToTop:hover {
+  opacity: 1;
 }
 
 .scrollToTop span {
@@ -656,9 +674,9 @@ a {
   color: #575757 !important;
 }
 
-.container {
+/*.container {
   max-width: 1000px;
-}
+}*/
 
 .hero-bloc-text {
   font-size: 38px;
@@ -679,7 +697,7 @@ a {
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.9em;
 }
 
 .tight-width-whitespace {
@@ -740,6 +758,7 @@ h4 {
 
 .white {
   color: #ffffff !important;
+  text-align: center;
 }
 
 .portfolio-thumb {
@@ -767,6 +786,7 @@ h4 {
 
 .bgc-white {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .bgc-dark-slate-blue {
@@ -779,6 +799,7 @@ h4 {
 
 .tc-white {
   color: #f3976c !important;
+  text-align: center;
 }
 
 .btn-atomic-tangerine {
@@ -829,10 +850,10 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-  .bloc {
+  /*.bloc {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  }*/
   .bloc.full-width-bloc,
   .bloc-tile-2.full-width-bloc .container,
   .bloc-tile-3.full-width-bloc .container,
@@ -911,14 +932,20 @@ h4 {
   .b-parallax {
     background-attachment: scroll;
   }
-  .navbar .nav {
+  .navbar-toggle {
+    display: none;
+  }
+  /*.navbar .nav {
     padding-top: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     float: none !important;
-  }
+  }*/
   .navbar.row {
     margin-left: 0;
     margin-right: 0;
+  }
+  .navbar-header {
+    justify-content: space-around;
   }
   .site-navigation {
     position: inherit;
@@ -926,14 +953,14 @@ h4 {
     -webkit-transform: none;
     -ms-transform: none;
   }
-  .nav > li {
+  /*.nav > li {
     margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background: rgba(0, 0, 0, 0.05);
     text-align: left;
     padding-left: 15px;
     width: 100%;
-  }
+  }*/
   .nav > li:hover {
     background: rgba(0, 0, 0, 0.08);
   }
@@ -976,10 +1003,10 @@ h4 {
     float: left;
     margin-left: 10px;
   }
-  .bloc {
+  /*.bloc {
     padding-left: 0;
     padding-right: 0;
-  }
+  }*/
   .bloc-xxl,
   .bloc-xl,
   .bloc-lg {
@@ -1035,6 +1062,29 @@ h4 {
   .bloc {
     padding-left: 0;
     padding-right: 0;
+  }
+  .logo_chouette {
+    display: flex;
+    /*height: 55px;
+    width: 55px;*/
+  }
+  .logo_chouette_2 {
+    height: 55px;
+    width: 55px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-header {
+    align-items: center;
+  }
+
+  .navbar .nav {
+    margin-right: 0;
+  }
+
+  .form-control {
+    width: 250px;
   }
 }
 
