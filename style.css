@@ -969,9 +969,7 @@ h4 {
     -webkit-transform: none;
     -ms-transform: none;
   }
-  .nav > li {
-    /*padding: 0;*/
-  }
+
   /*.nav > li {
     margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
