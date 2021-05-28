@@ -553,6 +553,7 @@ a[data-lightbox] {
   position: relative;
   display: block;
   text-align: center;
+  margin: auto;
 }
 
 a[data-lightbox]:hover::before {
@@ -728,6 +729,7 @@ p {
 h2 {
   font-size: 22px;
   line-height: 1.4em;
+  margin-bottom: 5%;
 }
 
 h3 {
@@ -870,6 +872,9 @@ h4 {
   .nav-center.navbar .nav {
     max-width: 100%;
   }
+  a[data-lightbox] {
+    width: 270px;
+  }
 }
 
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -933,7 +938,17 @@ h4 {
     background-attachment: scroll;
   }
   .navbar-toggle {
-    display: none;
+    display: block;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-toggle:hover {
+    opacity: 0;
+  }
+  .navbar .nav {
+    padding-top: 0;
+    margin-right: 0;
   }
   /*.navbar .nav {
     padding-top: 0;
@@ -952,6 +967,9 @@ h4 {
     transform: none;
     -webkit-transform: none;
     -ms-transform: none;
+  }
+  .nav > li {
+    /*padding: 0;*/
   }
   /*.nav > li {
     margin-top: 0;
@@ -1028,6 +1046,9 @@ h4 {
   .a-block {
     padding: 0 10px;
   }
+  a[data-lightbox] {
+    width: 320px;
+  }
   .btn-dwn {
     display: none;
   }
@@ -1063,6 +1084,9 @@ h4 {
     padding-left: 0;
     padding-right: 0;
   }
+  .bloc-sm {
+    padding: 0;
+  }
   .logo_chouette {
     display: flex;
     /*height: 55px;
@@ -1082,9 +1106,18 @@ h4 {
   .navbar .nav {
     margin-right: 0;
   }
+  .navbar-toggle:hover {
+    opacity: 1;
+  }
 
   .form-control {
     width: 250px;
+  }
+  .col-sm-12 {
+    margin: 15px;
+  }
+  a[data-lightbox] {
+    width: 290px;
   }
 }
 
