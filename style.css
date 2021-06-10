@@ -817,6 +817,16 @@ h4 {
   background: #c27956 !important;
   color: #ffffff !important;
 }
+.ltc-white:focus,
+.navbar-brand:focus,
+.logo_chouette:focus,
+li a:focus,
+.social:focus,
+.col-sm-3:focus,
+.btn-atomic-tangerine:focus {
+  border-color: black;
+  box-shadow: 2px 2px 2px 2px black;
+}
 
 .ltc-white {
   color: #ffffff !important;
