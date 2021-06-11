@@ -823,6 +823,7 @@ h4 {
 li a:focus,
 .social:focus,
 .col-sm-3:focus,
+.col-sm-6 a:focus,
 .btn-atomic-tangerine:focus {
   border-color: black;
   box-shadow: 2px 2px 2px 2px black;
